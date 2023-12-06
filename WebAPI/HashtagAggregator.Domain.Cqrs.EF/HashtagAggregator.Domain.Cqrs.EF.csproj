@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>HashtagAggregator.Domain.Cqrs.EF</AssemblyName>
+    <PackageId>HashtagAggregator.Domain.Cqrs.EF</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <CodeAnalysisRuleSet>..\StyleCop.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HashtagAggregator.Core.Cqrs\HashtagAggregator.Core.Cqrs.csproj" />
+    <ProjectReference Include="..\HashtagAggregator.Core.Models\HashtagAggregator.Core.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HashtagAggregator.Core.Contracts" Version="1.0.4" />
+    <PackageReference Include="HashtagAggregator.Core.Entities" Version="1.0.1" />
+    <PackageReference Include="HashtagAggregator.Data.DataAccess" Version="1.0.7" />
+    <PackageReference Include="MediatR" Version="3.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta004" />
+  </ItemGroup>
+
+</Project>
